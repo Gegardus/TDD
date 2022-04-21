@@ -15,7 +15,15 @@ describe 'method reverse' do
     expect(str.reverse('Ruby')).to eq('ybuR')
     expect(str.reverse('credo')).to eq('oderc')
     expect(str.reverse('target')).to eq('tegrat')
-  end   
+  end
 end
 
+describe 'method fizzbuzz' do
+  it 'takes an integer as an argument, and returns a string in defined order' do
+    fb = Solver.new
+    expect(fb.fizzbuzz(20)).to eq('buzz')
+    expect(fb.fizzbuzz(90)).to eq('fizzbuzz')
+    expect(fb.fizzbuzz(100)).to eq('buzz')
+  end
+end
 
