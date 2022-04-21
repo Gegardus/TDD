@@ -24,6 +24,7 @@ describe 'method fizzbuzz' do
     expect(fb.fizzbuzz(20)).to eq('buzz')
     expect(fb.fizzbuzz(90)).to eq('fizzbuzz')
     expect(fb.fizzbuzz(100)).to eq('buzz')
+    expect(fb.fizzbuzz(7)).to eq(7)
   end
 end
 
