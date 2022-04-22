@@ -6,7 +6,7 @@ describe 'method factorial' do
     expect(f.factorial(5)).to eq(120)
     expect(f.factorial(10)).to eq(3_628_800)
     expect(f.factorial(20)).to eq(2_432_902_008_176_640_000)
-  end   
+  end
 end
 
 describe 'method reverse' do
@@ -21,10 +21,9 @@ end
 describe 'method fizzbuzz' do
   it 'takes an integer as an argument, and returns a string in defined order' do
     fb = Solver.new
-    expect(fb.fizzbuzz(20)).to eq('buzz')
+    expect(fb.fizzbuzz(33)).to eq('fizz')
     expect(fb.fizzbuzz(90)).to eq('fizzbuzz')
     expect(fb.fizzbuzz(100)).to eq('buzz')
     expect(fb.fizzbuzz(7)).to eq(7)
   end
 end
-
